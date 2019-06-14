@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="./"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ post.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <h2>{{post.title}}</h2>
+        <br>
+          <!-- <ion-avatar> -->
+            <ion-img [src]="post.urlToImage"></ion-img>
+          <!-- </ion-avatar> -->
+          <p>{{post.description}}</p>
+          <br>
+          <a href="{{post.url}}">Read more...</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -8,16 +8,16 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'news',
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: '../news/news.module#NewsPageModule'
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'about',
         children: [
           {
             path: '',
@@ -26,7 +26,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab3',
+        path: 'contact',
         children: [
           {
             path: '',

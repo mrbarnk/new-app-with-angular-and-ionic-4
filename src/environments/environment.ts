@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://newsapi.org/v2/top-headlines?sources=techcrunch&',
+  apiKey: '1454210ddcd941aea98ad20044b48073'
 };
 
 /*
